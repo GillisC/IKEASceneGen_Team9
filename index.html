@@ -4,52 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IKEA SceneGen</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>IKEA SceneGen</h1>
+        <div class="header-bar">
+            <h1 class=header-title>IKEA SceneGen</h1>
+            <div class="logos-container"></div>
+                <img src="assets/chalmers_logo.svg" alt="IKEA Logo" class="chalmers-logo">
+                <img src="assets/IKEA-Logo.wine.svg" alt="Chalmers Logo" class="ikea-logo">
+            </div>
+        </div>
     </header>
 
     <main>
         <!-- Overview and Demo Section -->
         <section id="overview-demo">
-            <h2>An Overview and Initial Demo Illustration of Our Software Innovation</h2>
-            <p> <!-- Fill in the overview of your software innovation here --> </p>
-            <h3>Demo Illustration</h3>
-            <p> <!-- Provide a description of your demo and embed images, videos, or wireframes --> </p>
+            <h3 class="section-title">Introducing IKEA SceneGen</h2>
+                <p class="product-description">
+                    Our software is a mockup generator designed for dynamic, market-specific IKEA advertising, leveraging AI-generated imagery to create seasonally relevant and modifiable mockups. The innovation lies in its ability to rapidly produce high-quality visual content tailored to various geographic markets and input factors, drastically reducing production time.
+                </p>
+            <h3 class="demo-text">Demo Illustration</h3>
+            <div class="demo-video-container">
+                <video class="demo-video" controls>
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+              </video>
+            </div>
         </section>
 
         <!-- Design Thinking Principles Section -->
         <section id="design-thinking">
-            <h2>How Our Innovation Fulfills the Three Design Thinking Principles</h2>
+            <h3 class="section-title">Working With The Three Design Thinking Principles</h2>
             <h3>1. Empathy</h3>
-            <p> <!-- Describe how your innovation addresses the user's needs --> </p>
+            <p>
+
+            </p>
             <h3>2. Ideation</h3>
-            <p> <!-- Explain the brainstorming and creativity involved in developing the innovation --> </p>
+            <p>
+                
+            </p>
             <h3>3. Prototyping and Testing</h3>
-            <p> <!-- Describe how your team developed and tested prototypes to refine the innovation --> </p>
+            <p>
+
+            </p>
         </section>
 
         <!-- Background Information Section -->
         <section id="background-info">
-            <h2>Background Information</h2>
-            <h3>Team Members</h3>
-            <ul>
-                <li><!-- Member 1 name --></li>
-                <li><!-- Member 2 name --></li>
-                <li><!-- Member 3 name --></li>
-                <!-- Add more team members as necessary -->
-            </ul>
-            <h3>Team Photo (optional)</h3>
-            <img src="team-photo.jpg" alt="Team Photo" class="team-photo">
-            <h3>Contact Information</h3>
-            <p>Contact Name: <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <h3 class="section-title">Team Members</h3>
+            <div class="members-container">
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Tim Carlsson</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:timca@student.chalmers.se">timca@chalmers.se</a></p>
+                </div>
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Marco Tafani</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:marcot@student.chalmers.se">marcot@student.chalmers.se</a></p>
+                </div>
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Marco Speziale</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:speziale@student.chalmers.se">speziale@student.chalmers.se</a></p>
+                </div>
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Felix Jonsson</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:felixjon@student.chalmers.se">felixjon@student.chalmers.se</a></p>
+                </div>
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Matty Jatta</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:mattyj@student.chalmers.se">mattyj@student.chalmers.se</a></p>
+                </div>
+                <div class="team-member-card">
+                    <img src="assets/blank-person.jpg" class="team-photo">
+                    <h1 class="member-name"> Arvid Hammarlund</h1>
+                    <p class="member-role"> Developer </p>
+                    <p><a class="mail-link" href="mailto:arvidax@student.chalmers.se">arvidax@student.chalmers.se</a></p>
+                </div>
+
+
 
             <h3>Course Information</h3>
-            <p>Chalmers University of Technology</p>
-            <img src="chalmers-logo.png" alt="Chalmers Logo" width="150">
+
         </section>
         
         <!-- References Section -->
@@ -61,22 +107,14 @@
                 <li><!-- Add more references as needed --></li>
             </ul>
         </section>
-        
-        <section id="logos">
-            <div class="logos-container">
-                <img height=150 width=auto src="assets/chalmers_logo.svg" alt="IKEA Logo" class="logo">
-                <img height=150 width=auto src="assets/IKEA-Logo.wine.svg" alt="Chalmers Logo" class="logo">
-            </div>
-        </section>
-
     
     </main>
 
     
-    <footer>
-        <p>&copy; 2024 - Your Team's Name</p>
+    <footer class="course">
+        <p>&copy; 2024 - Team 9</p>
     </footer>
     
-    <p>Course Name: <!-- Insert course name here --></p>
+    <p class="course">Course Name: TEK830 Digitalization and AI in practice</p>
 </body>
 </html>
