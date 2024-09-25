@@ -57,27 +57,28 @@ body {
     height: 100px;  
     width: auto;  
 }
+
 main {
     padding: 10px;
 }
 
 .section-title {
-    position: relative; /* Allows the pseudo-element to be positioned relative to the title */
+    position: relative;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px; /* Adjust space below the title */
-    color: var(--off-white); /* Use your preferred palette color */
+    margin-bottom: 20px; 
+    color: var(--off-white); 
 }
 
 .product-description {
-    max-width: 800px; /* Set a maximum width to prevent the text from stretching too wide */
-    margin: 0 auto; /* Centers the paragraph horizontally */
-    text-align: center; /* Centers the text within the paragraph */
-    font-size: 18px; /* Adjust the font size for readability */
-    line-height: 1.6; /* Increases space between lines for better readability */
-    color: var(--cool-gray); /* Optional: apply color from your palette */
-    padding: 20px; /* Adds space around the text */
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: var(--cool-gray); 
+    padding: 20px; 
 }
 
 .demo-text {
@@ -93,7 +94,7 @@ main {
     align-items: center;
     margin: 20px;
     padding: 10px;
-    overflow: hidden; /* Ensure nothing sticks out */
+    overflow: hidden; 
 }
 
 .demo-video {
@@ -103,25 +104,27 @@ main {
     border: 3px solid var(--ikea-blue);
     border-radius: 10px;
     object-fit: cover;
-    box-sizing: border-box; /* Prevents border overflow */
+    box-sizing: border-box; 
 }
 
 .section-title::after {
-    content: ''; /* Necessary for the pseudo-element */
+    content: '';
     display: block;
-    width: 400px; /* Length of the rectangle (adjust as needed) */
-    height: 5px; /* Thickness of the rectangle */
-    background-color: var(--ikea-yellow); /* Color of the rectangle */
-    margin: 10px auto 0; /* Centers the rectangle and adds space above it */
-    border-radius: 5px; /* Optional: rounded corners for the rectangle */
+    width: 400px; 
+    height: 5px; 
+    background-color: var(--ikea-yellow); 
+    margin: 10px auto 0;
+    border-radius: 5px; 
 }
 
 .members-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 200px);
     gap: 20px;
     justify-content: center;
     padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .team-member-card {
