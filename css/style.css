@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+:root {
+    /* Color palette */
+
+    /* Backgrounds */
+    --dark-slate: #1A1A2E;  /* Primary backgrounds */
+    --charcoal: #2E2E3A;    /* Section or card backgrounds */
+    --soft-gray: #3E4053;   /* Borders and lighter backgrounds */
+
+    /* Text colors */
+    --off-white: #EDEDED;   /* Primary text */
+    --cool-gray: #C5C6C7;   /* Secondary text, captions, subheadings */
+
+    /* IKEA colors */
+    --ikea-blue: #0058AB;
+    --ikea-yellow: #FBD914;
+}
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dark-slate);
+    color: var(--off-white);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 10px;
+}
+
