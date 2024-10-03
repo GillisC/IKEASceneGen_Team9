@@ -117,6 +117,22 @@ main {
     border-radius: 5px; 
 }
 
+#design-thinking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust this to control the width of the content */
+    padding: 20px;
+}
+
+#design-thinking p {
+    line-height: 1.6;
+    text-align: center;
+}
+
 .members-container {
     display: grid;
     grid-template-columns: repeat(3, 200px);
@@ -191,4 +207,34 @@ main {
     text-align: center;
 }
 
+#design-thinking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust this to control the width of the content */
+    padding: 20px;
+}
 
+#references {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust to control the width */
+    padding: 20px;
+}
+
+#references ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#references li {
+    line-height: 1.6;
+    text-align: center;
+}
