@@ -4,12 +4,14 @@
     /* Color palette */
 
     /* Backgrounds */
+    --dark: #212128;
     --dark-slate: #1A1A2E;  /* Primary backgrounds */
     --charcoal: #2E2E3A;    /* Section or card backgrounds */
     --soft-gray: #3E4053;   /* Borders and lighter backgrounds */
 
     /* Text colors */
-    --off-white: #EDEDED;   /* Primary text */
+    --off-white: #EDEDED; 
+    --off-white-hover: #F9F9F9;  /* Primary text */
     --cool-gray: #C5C6C7;   /* Secondary text, captions, subheadings */
 
     /* IKEA colors */
@@ -20,8 +22,8 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: var(--dark-slate);
-    color: var(--off-white);
+    background-color: var(--off-white);
+    color: var(--charcoal);
     margin: 0;
     padding: 0;
 }
@@ -30,10 +32,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--charcoal);
+    background-color: var(--dark);
     padding: 20px;
     text-align: center;
-    border-bottom: solid 4px var(--ikea-yellow);
+    border-bottom: solid 4px var(--ikea-blue);
 }
 
 .header-title {
@@ -68,7 +70,7 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px; 
-    color: var(--off-white); 
+    color: var(--charcoal); 
 }
 
 .product-description {
@@ -77,8 +79,15 @@ main {
     text-align: center; 
     font-size: 18px; 
     line-height: 1.6; 
-    color: var(--cool-gray); 
+    color: var(--charcoal); 
     padding: 20px; 
+}
+
+.overview-container {
+    padding-top: 6rem;
+    display: flex;
+    align-items: flex-start;
+
 }
 
 .demo-text {
@@ -88,24 +97,85 @@ main {
     padding: 10px;
 }
 
-.demo-video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    overflow: hidden; 
-}
-
 .demo-video {
     width: 100%; 
-    max-width: 800px;
+    max-width: 720px;
+    max-height: 480px;
     height: auto;
     border: 3px solid var(--ikea-blue);
     border-radius: 10px;
     object-fit: cover;
     box-sizing: border-box; 
 }
+
+.text-container {
+    flex: 1;
+    margin: auto 0;
+}
+  
+  .demo-video-container {
+    flex: 1;
+}
+
+.text-container, .demo-video-container {
+    opacity: 0; /* Start hidden */
+    animation-duration: 1s; /* Duration of animation */
+    animation-fill-mode: forwards; /* Keep end state */
+  }
+  
+  .text-container {
+    animation-name: slideInLeft;
+    animation-delay: 0.2s; /* Optional delay */
+  }
+  
+  .demo-video-container {
+    animation-name: slideInRight;
+    animation-delay: 0.4s; /* Optional delay for staggering */
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px); /* Start off-screen */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px); /* Start off-screen */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Pitch section*/
+.pitch-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem; /* Space between the items */
+    width: 100%;
+}
+
+.pitch-item {
+    flex: 1; /* Ensures equal width for both items */
+    max-width: 40%; /* Control maximum width for each item */
+    text-align: center;
+}
+  
+.presentation, .pitch {
+    width: 100%; /* Ensures the content fills the container */
+    height: 400px; /* Adjust height as needed */
+    margin: 0 auto;
+}
+
 
 .section-title::after {
     content: '';
@@ -117,6 +187,25 @@ main {
     border-radius: 5px; 
 }
 
+.thinking-container {
+    padding-top: 8rem;
+}
+
+.design-thinking-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.thinking {
+    width: 18rem;
+    height: auto;
+}
+
+#presentation-and-pitch {
+    padding-top: 8rem;
+}
+
 #design-thinking {
     display: flex;
     flex-direction: column;
@@ -124,7 +213,6 @@ main {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    max-width: 800px; /* Adjust this to control the width of the content */
     padding: 20px;
 }
 
@@ -237,4 +325,37 @@ main {
 #references li {
     line-height: 1.6;
     text-align: center;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--off-white);
+    color: var(--charcoal);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.github-button:hover {
+    background-color: var(--off-white-hover);
+}
+
+.github-button:active {
+    transform: scale(0.97);
+}
+
+.github-button span {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.github-button img {
+    width: 1rem;
+    height: 1rem;
+    padding-right: 0.8rem;
 }

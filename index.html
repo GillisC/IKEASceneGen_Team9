@@ -12,8 +12,14 @@
         <div class="header-bar">
             <h1 class=header-title>IKEA SceneGen</h1>
             <div class="logos-container"></div>
-                <img src="assets/chalmers_logo.svg" alt="IKEA Logo" class="chalmers-logo">
-                <img src="assets/IKEA-Logo.wine.svg" alt="Chalmers Logo" class="ikea-logo">
+                <!-- <img src="assets/chalmers_logo.svg" alt="IKEA Logo" class="chalmers-logo"> -->
+                <!-- <img src="assets/IKEA-Logo.wine.svg" alt="Chalmers Logo" class="ikea-logo"> -->
+                <div class="github-button-container">
+                    <a href="https://github.com/GillisC/ikea-scenegen/tree/master" target="_blank" class="github-button">
+                        <img src="assets/github.png" alt="github" class="github-logo">
+                        <span>Code Repository</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -21,49 +27,77 @@
     <main>
         <!-- Overview and Demo Section -->
         <section id="overview-demo">
-            <h3 class="section-title">Introducing IKEA SceneGen</h2>
-                <p class="product-description">
-                    Our software is a mockup generator designed for dynamic, market-specific IKEA advertising, leveraging AI-generated imagery to create seasonally relevant and modifiable mockups. The innovation lies in its ability to rapidly produce high-quality visual content tailored to various geographic markets and input factors, drastically reducing production time.
-                </p>
-            <h3 class="demo-text">Demo Illustration</h3>
-            <div class="demo-video-container">
-                <video class="demo-video" controls>
-                    <source src="assets/demo_video_v1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-              </video>
+            <div class="overview-container">
+                <div class="text-container">
+                    <h3 class="section-title">Introducing SceneGen</h2>
+                    <p class="product-description">
+                        Our software is a mockup generator designed for dynamic, market-specific IKEA advertising, leveraging AI-generated imagery to create seasonally relevant and modifiable mockups. The innovation lies in its ability to rapidly produce high-quality visual content tailored to various geographic markets and input factors, drastically reducing production time.
+                    </p>
+                </div>
+                <div class="demo-video-container">
+                    <video class="demo-video" controls>
+                        <source src="assets/demo_video_v1.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
+        </section>
+
+        <section id="presentation-and-pitch">
+            <h3 class="section-title">Presentation & Final Pitch</h2>
+            <div class="pitch-container">
+                <div class="pitch-item pitch-powerpoint">
+                  <h3>Pitch Presentation</h3>
+                  <iframe class="presentation" src="assets/ThirdPitch_Team9.pdf#page=1" frameborder="0"></iframe>
+                </div>
+                <div class="pitch-item pitch-video">
+                  <h3>Pitch Video</h3>
+                  <div class="video-container">
+                    <video class="pitch" controls>
+                      <source src="assets/demo_video_v1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
         </section>
 
         <!-- Design Thinking Principles Section -->
         <section id="design-thinking">
-            <h3 class="section-title">Working With The Three Design Thinking Principles</h2>
-            <h3>Empathy: Understanding the Customer's Needs</h3>
-            <p>
-                Our innovation centers around the creation of AI-generated, 
-                market-specific imagery for IKEA's marketing and product development purposes.  
-                This led us to design a tool that allows users to dynamically select options such as 
-                season, time of day, materials, style, and market to create personalized, highly relevant imagery 
-                that resonates with their target audience. By putting the user's needs first, we ensure that the 
-                generated images are not only visually appealing but also culturally meaningful.
-            </p>
-            <h3>Ideation: Generating Innovative Concepts</h3>
-            <p>
-                During the ideation phase, we explored various creative approaches to help IKEA generate 
-                high-quality images that capture different atmospheres and emotions. The concept of allowing 
-                marketers to toggle multiple attributes—such as style, season, and feeling—was born out of 
-                brainstorming sessions focused on how we could streamline IKEA's creative process. By leveraging 
-                AI-powered tools like DALL-E, we enable endless combinations of aesthetic elements, empowering 
-                IKEA teams to visualize new products or marketing campaigns with minimal effort. This flexibility
-                ensures that the tool remains adaptable to new markets and trends, enhancing IKEA's ability to stay 
-                ahead of customer expectations.
-            </p>
-            <h3>Prototyping and Testing</h3>
-            <p>
-                Our focus has been on refining the prototype internally, ensuring that the tool is 
-                user-friendly and capable of producing high-quality visuals that meet IKEA's design 
-                standards. Although formal user feedback is pending, we have ensured that the system
-                is flexible, allowing for continuous improvements based on future testing and real-world use.
-            </p>
+            <div class="thinking-container">
+                <h3 class="section-title">Working With The Three Design Thinking Principles</h2>
+                <div class="design-thinking-container">
+                    <div class="thinking">
+                        <h3>Understanding the Customer</h3>
+                        <p>
+                            Our innovation centers around the creation of AI-generated,
+                            market-specific imagery for IKEA's marketing and product development purposes.
+                            This led us to design a tool that allows users to dynamically select options such as
+                            season, time of day, materials, style, and market to create personalized, highly relevant imagery
+                            that resonates with their target audience. By putting the user's needs first, we ensure that the
+                            generated images are not only visually appealing but also culturally meaningful.
+                        </p>
+                    </div>
+                    <div class="thinking">
+                        <h3>Generating Concepts</h3>
+                        <p>
+                            During the ideation phase, we explored various creative approaches to help IKEA generate
+                            high-quality images that capture different atmospheres and emotions. From surveys with employees at
+                            IKEA we saw that there was a need for a tool which could aid in generating general design and scene ideas.                            
+                            By leveraging AI-powered tools like DALL-E, we enable IKEA teams to visualize potential new products or marketing 
+                            campaigns with minimal effort at a lower time & cost basis. This flexibility ensures that the tool remains adaptable to new markets and trends, 
+                            enhancing IKEA's ability to stay ahead of customer expectations.
+                        </p>
+                    </div>
+                    <div class="thinking">
+                        <h3>Prototyping and Testing</h3>
+                        <p>
+                            Our focus has been on refining the prototype internally, ensuring that the tool is
+                            user-friendly and capable of producing high-quality visuals that meet IKEA's design
+                            standards. Although formal user feedback is pending, we have ensured that the system
+                            is flexible, allowing for continuous improvements based on future testing and real-world use.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Background Information Section -->
@@ -119,5 +153,12 @@
     </footer>
     
     <p class="course">Course Name: TEK830 Digitalization and AI in practice</p>
+
+    <script type="module" src="js/script.js"></script>
+
+
+    <script>
+    
+    </script>
 </body>
 </html>
