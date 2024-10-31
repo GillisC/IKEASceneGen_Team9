@@ -80,14 +80,15 @@ main {
     font-size: 18px; 
     line-height: 1.6; 
     color: var(--charcoal); 
-    padding: 20px; 
+    padding: 3rem;
 }
 
 .overview-container {
     padding-top: 6rem;
     display: flex;
-    align-items: flex-start;
-
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Optional: adds spacing between text and video containers */
 }
 
 .demo-text {
@@ -113,7 +114,10 @@ main {
     margin: auto 0;
 }
   
-  .demo-video-container {
+.demo-video-container {
+    display: flex;
+    justify-content: center; /* Center video horizontally */
+    align-items: center; /* Center video vertically within container */
     flex: 1;
 }
 
@@ -222,9 +226,8 @@ main {
 }
 
 .members-container {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    gap: 20px;
+    display: flex;
+    gap: 2rem;
     justify-content: center;
     padding: 10px;
     max-width: 1000px;
@@ -306,26 +309,30 @@ main {
     padding: 20px;
 }
 
-#references {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px; /* Adjust to control the width */
-    padding: 20px;
-}
-
-#references ul {
+.references {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .references ul {
     list-style-type: none;
-    padding-left: 0;
-}
-
-#references li {
-    line-height: 1.6;
-    text-align: center;
-}
+    padding: 0;
+  }
+  
+  .references li {
+    margin-bottom: 10px;
+  }
+  
+  .references a {
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .references a:hover {
+    text-decoration: underline;
+  }
 
 .github-button {
     display: flex;
