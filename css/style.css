@@ -239,8 +239,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 260px;
     background-color: var(--charcoal);
     border-radius: 10%;
     overflow: hidden;
@@ -294,7 +294,7 @@ main {
 .course {
     font-size: 14px;
     font-weight: bold;
-    color: var(--cool-gray);
+    color: var(--charcoal);
     text-align: center;
 }
 
@@ -310,9 +310,10 @@ main {
 }
 
 .references {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--charcoal);
     margin-top: 20px;
   }
   
@@ -326,7 +327,7 @@ main {
   }
   
   .references a {
-    color: #1a0dab;
+    color: var(--ikea-blue);
     text-decoration: none;
   }
   
